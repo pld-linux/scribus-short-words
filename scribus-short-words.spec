@@ -5,7 +5,7 @@ Version:	1.2.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Publishing
-Source0:	http://www.yarpen.cz/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://www.yarpen.cz/scribus-short-words/%{name}-%{version}.tar.bz2
 # Source0-md5:	192d90f6f165d1c5d337c330c8c09829
 URL:		http://www.yarpen.cz/scribus-short-words/
 BuildRequires:	autoconf
@@ -14,7 +14,7 @@ BuildRequires:	scribus-devel
 Requires:	scribus
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_ulibdir	%{_prefix}/lib
+%define		_ulibdir	%{_prefix}/lib
 
 %description
 Short Words for Scribus is a special plug-in for adding non-breaking
@@ -22,15 +22,13 @@ spaces before or after so called short words.
 
 %description -l pl
 Short Words dla Scribusa jest specjaln± wtyczk± automatyzuj±ca
-dodawanie tzw. twardych spacji w dokumentach zgodnie z regu³ami
-polskiej typografii.
+dodawanie tzw. twardych spacji przed lub po "krótkich s³owach" w
+dokumentach zgodnie z regu³ami polskiej typografii.
 
 %prep
 %setup -q
 
 %build
-# if ac/am/* rebuilding is necessary, do it in this order and add
-# appropriate BuildRequires
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
