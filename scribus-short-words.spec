@@ -2,7 +2,7 @@ Summary:	Scribus Short Words plugin
 Summary(pl):	Wtyczka Short Words dla Scribusa
 Name:		scribus-short-words
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Publishing
 Source0:	http://www.yarpen.cz/scribus-short-words/%{name}-%{version}.tar.bz2
