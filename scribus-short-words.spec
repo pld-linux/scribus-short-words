@@ -2,16 +2,16 @@ Summary:	Scribus Short Words plugin
 Summary(pl):	Wtyczka Short Words dla Scribusa
 Name:		scribus-short-words
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Applications/Publishing
 Source0:	http://www.yarpen.cz/scribus-short-words/%{name}-%{version}.tar.bz2
-# Source0-md5:	192d90f6f165d1c5d337c330c8c09829
+# Source0-md5:	73eb46f3b1a4f702334e748f1fee2d39
 URL:		http://www.yarpen.cz/scribus-short-words/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	scribus-devel
-Requires:	scribus
+BuildRequires:	scribus-devel >= 1.2.1
+Requires:	scribus >= 1.2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_ulibdir	%{_prefix}/lib
@@ -57,13 +57,11 @@ rm -rf $RPM_BUILD_ROOT
 %lang(fr) %{_ulibdir}/scribus/plugins/libscribusshortwords.fr.qm
 %lang(pl) %{_ulibdir}/scribus/plugins/libscribusshortwords.pl.qm
 %lang(sk) %{_ulibdir}/scribus/plugins/libscribusshortwords.sk.qm
-%dir %{_datadir}/scribus/doc/%{name}
-%{_datadir}/scribus/doc/%{name}/*.html
-%lang(cs) %dir %{_datadir}/scribus/doc/%{name}/cs
-%lang(cs) %{_datadir}/scribus/doc/%{name}/cs/*
-%lang(en) %dir %{_datadir}/scribus/doc/%{name}/en
-%lang(en) %{_datadir}/scribus/doc/%{name}/en/*
-%lang(fr) %dir %{_datadir}/scribus/doc/%{name}/fr
-%lang(fr) %{_datadir}/scribus/doc/%{name}/fr/*
-%lang(pl) %dir %{_datadir}/scribus/doc/%{name}/pl
-%lang(pl) %{_datadir}/scribus/doc/%{name}/pl/*
+%lang(cs) %dir %{_datadir}/scribus/doc/cs/tutorials/%{name}
+%lang(cs) %{_datadir}/scribus/doc/cs/tutorials/%{name}/*
+%lang(en) %dir %{_datadir}/scribus/doc/en/tutorials/%{name}
+%lang(en) %{_datadir}/scribus/doc/en/tutorials/%{name}/*
+%lang(fr) %dir %{_datadir}/scribus/doc/fr/tutorials/%{name}
+%lang(fr) %{_datadir}/scribus/doc/fr/tutorials/%{name}/*
+%lang(pl) %dir %{_datadir}/scribus/doc/pl/tutorials/%{name}
+%lang(pl) %{_datadir}/scribus/doc/pl/tutorials/%{name}/*
