@@ -1,5 +1,5 @@
 Summary:	Scribus Short Words plugin
-Summary(pl.UTF-8):   Wtyczka Short Words dla Scribusa
+Summary(pl.UTF-8):	Wtyczka Short Words dla Scribusa
 Name:		scribus-short-words
 Version:	1.2.1
 Release:	3
