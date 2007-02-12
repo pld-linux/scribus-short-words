@@ -1,5 +1,5 @@
 Summary:	Scribus Short Words plugin
-Summary(pl):	Wtyczka Short Words dla Scribusa
+Summary(pl.UTF-8):   Wtyczka Short Words dla Scribusa
 Name:		scribus-short-words
 Version:	1.2.1
 Release:	3
@@ -20,10 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Short Words for Scribus is a special plug-in for adding non-breaking
 spaces before or after so called short words.
 
-%description -l pl
-Short Words dla Scribusa jest specjaln± wtyczk± automatyzuj±ca
-dodawanie tzw. twardych spacji przed lub po "krótkich s³owach" w
-dokumentach zgodnie z regu³ami polskiej typografii.
+%description -l pl.UTF-8
+Short Words dla Scribusa jest specjalnÄ… wtyczkÄ… automatyzujÄ…ca
+dodawanie tzw. twardych spacji przed lub po "krÃ³tkich sÅ‚owach" w
+dokumentach zgodnie z reguÅ‚ami polskiej typografii.
 
 %prep
 %setup -q
